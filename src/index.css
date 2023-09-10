@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.logo {
+  width: 100px;
+  flex: 0.6;
+}
+.logo img {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.navMenu {
+  flex: 3;
+  display: flex;
+  justify-content: center; /* Center-align the contents horizontally */
+  align-items: center; /* Center-align the contents vertically */
+}
+
+.navMenu a {
+  text-decoration: none;
+  margin: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.login {
+  flex: 0.6;
+  display: flex;
+  justify-content: center; /* Center-align the button horizontally */
+  align-items: center; /* Center-align the button vertically */
+}
+
+.login button {
+  border: none;
+  background-color: red;
+  height: 36px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Home Container */
+
+.homeContainer {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  margin-top: 10px;
+  margin-left: 240px;
+  user-select: none;
+  height: 100vh;
+}
+
+/* All Media Quiers  */
+@media screen and (max-width: 1501px) {
+  .homeImgContainer2 img {
+    height: 80%;
+  }
+  .homeTextContainer1 h1 {
+    font-size: 6rem;
+  }
+  .homeContainer {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1336px) {
+  .homeImgContainer2 img {
+    height: 65%;
+  }
+  .homeTextContainer1 h1 {
+    font-size: 6rem;
+  }
+  .homeContainer {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1143px) {
+  .homeImgContainer2 img {
+    height: 60%;
+  }
+  .homeTextContainer1 h1 {
+    font-size: 5.5rem;
+  }
+  .homeContainer {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 971px) {
+  .homeImgContainer2 img {
+    height: 55%;
+  }
+  .homeTextContainer1 h1 {
+    font-size: 5rem;
+  }
+  .homeContainer {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 864px) {
+  .homeImgContainer2 img {
+    height: 40%;
+  }
+  .homeTextContainer1 h1 {
+    font-size: 4rem;
+  }
+  .homeContainer {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .homeContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+    margin-left: 50px;
+  }
+  .homeTextContainer1 {
+    order: 2; /* Reorder container 1 */
+    margin-top: -80px;
+  }
+  .homeImgContainer2 {
+    order: 1; /* Reorder container 2 */
+    /* margin-top: 0px; */
+    
+
+  }
+  .homeTextContainer1 h1 {
+    font-size: 3rem;
+  }
+  .homeImgContainer2 img {
+    height: 100%;
+    /* width: 30%; */
+    margin-top: 50px !important; /* Reset margin-top */
+  }
+  .homeContainer1Para {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 553px) {
+  .navbar {
+    justify-content: center; /* Center-align contents horizontally */
+  }
+
+  .navMenu, .login {
+    display: none; /* Hide the navigation menu and login button */
+  }
+
+  .logo {
+    text-align: center; /* Center-align the logo */
+    width: 100%; /* Make the logo take the full width */
+  }
+
+  .logo img {
+    max-width: 100%; /* Ensure the logo fits within the container */
+    vertical-align: middle; /* Align vertically in the middle */
+  }
+}
+
+.homeTextContainer1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+  color: #111111;
+  font-family: "Asap", sans-serif;
+  margin-bottom: 10px;
+}
+
+.homeTextContainer1 p {
+  margin: 0;
+  user-select: none;
+}
+
+.homeContainer1Para {
+  width: 44%;
+}
+
+.homeContainer1btn {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.shopnowbtn {
+  max-width: 128px;
+  min-width: 126px;
+  max-height: 48px;
+  min-height: 54px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.categorybtn {
+  cursor: pointer;
+  max-width: 128px;
+  min-width: 126px;
+  max-height: 48px;
+  min-height: 54px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 60px;
+  background-color: rgb(247, 246, 246);
+}
+
+/* Container 2 */
+.homeImgContainer2 {
+  user-select: none;
+  display: flex;
+}
+
+.homeImgContainer2 img {
+  max-width: 100%;
+  max-height: 70%;
+  bottom: 0;
+  margin-top: 90px;
+}
